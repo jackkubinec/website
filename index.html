@@ -31,7 +31,6 @@
             font-weight: bold;
             margin-bottom: 50px;
             letter-spacing: 2px;
-            white-space: nowrap;
         }
 
         p {
@@ -60,17 +59,88 @@
             color: #551A8B;
         }
 
-        @media (max-width: 768px) {
+        /* Tablet and small desktop */
+        @media (max-width: 992px) {
             .container {
+                max-width: 75%;
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 15px;
+            }
+
+            .container {
+                max-width: 100%;
                 padding: 40px 30px;
+                border-width: 6px;
             }
 
             h1 {
-                font-size: 48px;
+                font-size: 42px;
+                margin-bottom: 35px;
+                letter-spacing: 1px;
             }
 
-            p, .contact, .links {
-                font-size: 16px;
+            p {
+                text-align: left;
+                margin-bottom: 25px;
+            }
+
+            a {
+                padding: 4px 0;
+                display: inline-block;
+            }
+        }
+
+        /* Mobile phones */
+        @media (max-width: 480px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            .container {
+                padding: 25px 20px;
+                border-width: 4px;
+            }
+
+            h1 {
+                font-size: 32px;
+                margin-bottom: 25px;
+                letter-spacing: 0.5px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+
+            .contact {
+                font-size: 15px;
+                margin-bottom: 30px;
+            }
+
+            .links {
+                font-size: 15px;
+                line-height: 2;
+            }
+
+            a {
+                padding: 6px 0;
+            }
+        }
+
+        /* Very small phones */
+        @media (max-width: 360px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            .container {
+                padding: 20px 15px;
             }
         }
     </style>
